@@ -16,7 +16,7 @@ const Navbar = () => {
     }
   }, [isDark]);
   return (
-    <nav className="navbar-container">
+    <nav className={`navbar-container ${isDark ? "dark" : ""}`}>
       <Link to="/css-global">Mini loja</Link>
       <div className="nav-right-container">
         <div
