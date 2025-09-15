@@ -1,4 +1,4 @@
-import Monitor5 from "../assets/monitor5.jpeg";
+import Monitor3 from "../assets/monitor3.jpeg";
 import { IoMdStar } from "react-icons/io";
 import { useEffect, useState } from "react";
 import SkeletonCard from "../Skeleton";
@@ -85,7 +85,7 @@ const ProductCard = () => {
           <ProductTarget>Promo</ProductTarget>
           <picture>
             <ProductImage
-              src={Monitor5}
+              src={Monitor3}
               alt="monitor"
               className="product-image"
               loading="lazy"

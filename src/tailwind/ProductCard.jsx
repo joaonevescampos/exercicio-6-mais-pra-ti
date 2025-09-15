@@ -1,4 +1,4 @@
-import Monitor6 from "../assets/monitor6.jpeg";
+import Monitor4 from "../assets/monitor4.jpeg";
 import { IoMdStar } from "react-icons/io";
 import { useEffect, useState } from "react";
 import SkeletonCard from "../Skeleton";
@@ -23,7 +23,7 @@ const ProductCard = () => {
           </span>
           <picture>
             <img
-              src={Monitor6}
+              src={Monitor4}
               alt="monitor"
               className="w-[200px] h-[200px] object-cover rounded-md z-[997]"
               loading="lazy"

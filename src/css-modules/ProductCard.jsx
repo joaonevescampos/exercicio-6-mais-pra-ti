@@ -1,5 +1,5 @@
 import Button from "./Button";
-import Monitor2 from "../assets/monitor3.jpeg";
+import Monitor2 from "../assets/monitor2.jpeg";
 import { IoMdStar } from "react-icons/io";
 import { useEffect, useState } from "react";
 import SkeletonCard from "../Skeleton";

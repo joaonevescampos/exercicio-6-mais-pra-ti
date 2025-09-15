@@ -1,47 +1,32 @@
-Tarefa: Implemente a mesma tela em 4 versões ou telas diferentes para cada uma das versões:
+# Exercício 6 - Mini Loja 
 
-1. CSS Global · 2) CSS Modules · 3) Tailwind CSS · 4) styled-components.
+- Objetivo: Implemente a mesma tela em 4 versões ou telas diferentes para cada uma das versões:
 
-Exemplo de Tela a construir:
+1. CSS Global · 
+2) CSS Modules · 
+3) Tailwind CSS · 
+4) styled-components.
 
-- Navbar (fixa): logo, toggle de tema (claro/escuro com persistência) e badge do carrinho.
+## Instalação e rodar o projeto local
+1) Clone o repositório:
+```bash
+git clone https://github.com/joaonevescampos/exercicio-6-mais-pra-ti.git
+```
 
-- Grid de produtos (cards) responsivo: ≤480px: 1 col · 481–768px: 2 cols · 769–1024px: 3 cols · ≥1025px: 4 cols.
+2) Entre na pasta:
+```bash
+cd exercicio-6-mais-pra-ti
+```
 
-- Card de produto: imagem 1:1 com espaço reservado, título 2 linhas com ellipsis, preço, rating (★), tag (“Novo”/“Promo”), botão “Adicionar” com variantes solid/outline/ghost.
+3) instale as dependências:
+```bash
+npm install
+```
 
-Estados/Interações obrigatórios:
+4) Acesse o servidor na web: 
+```bash
+http://localhost:5173/
+```
 
-- Hover (elevação/sombra), focus visível, disabled, loading com skeleton (simule atraso).
-
-- Dark mode aplicado a cores/sombras/bordas.
-
-Acessibilidade:
-
-- Navegação por teclado, `aria-*` onde fizer sentido, contraste ≥ 4.5:1.
-
-Animações:
-
-- Transições de 150–250ms (usar transform/opacity).
-
-Dados:
-
-- Exibir 6 produtos (id, título, preço, rating, tag, imagem placeholder). Imagens com lazy loading.
-
-Entregáveis:
-
-- Quatro pastas: `01-css-global/`, `02-css-modules/`, `03-tailwind/`, `04-styled-components/`.
-- Cada pasta com os componentes (`Navbar`, `ProductCard`, `Button`, `Skeleton`) e um README curto.
-
-Restrições:
-
-- Em cada versão, use apenas a técnica indicada (global, modules, utilitários, CSS-in-JS com `ThemeProvider` e props).
-
-Critérios de aceite:
-
-- Breakpoints exatamente como descritos.
-- Dark mode com persistência.
-- Focus ring visível.
-- Skeleton sem layout shift.
-- Variantes do botão consistentes nos dois temas.
-- Organização clara de pastas e uso de tokens (cores, espaçamentos, raio, sombras).
+## Autor
+João Victor Neves Campos de Jesus
