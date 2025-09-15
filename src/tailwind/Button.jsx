@@ -1,9 +1,9 @@
-import React from 'react'
-
 const Button = () => {
   return (
-    <div>Button</div>
-  )
-}
+    <button className="text-white font-semibold cursor-pointer rounded-md h-10 bg-[rgb(38,38,112)] px-4">
+      Adicionar
+    </button>
+  );
+};
 
-export default Button
+export default Button;
