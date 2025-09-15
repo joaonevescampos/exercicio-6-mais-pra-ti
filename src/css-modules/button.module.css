@@ -1,0 +1,13 @@
+.solid {
+  background-color: rgb(38, 38, 112);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.dark .solid {
+  background-color: rgb(30, 165, 165);
+  color: white;
+}

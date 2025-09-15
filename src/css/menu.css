@@ -1,0 +1,56 @@
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: auto;
+  padding: 0;
+  width: fit-content;
+  font-size: 12px;
+  padding-top: 70px;
+}
+
+.menu > li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(38, 38, 112);
+  color: rgb(38, 38, 112);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 120px;
+}
+
+.menu > li:hover {
+  background-color: rgb(38, 38, 112);
+  color: white;
+}
+
+.menu > .active {
+  background-color: rgb(38, 38, 112);
+  color: white;
+}
+
+.dark .menu > .active {
+  background-color: rgb(30, 165, 165);
+  color: white;
+}
+
+.dark .menu > li {
+  border: 1px solid rgb(30, 165, 165);
+  color: rgb(30, 165, 165);
+}
+
+.dark .menu > li:hover {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

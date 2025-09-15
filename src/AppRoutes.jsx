@@ -8,10 +8,10 @@ const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<CssGlobalPage />} />
         <Route path="/css-modules" element={<CssModulesPage />} />
-        <Route path="/css-global" element={<CssGlobalPage />} />
         <Route path="/tailwind" element={<TailwindPage />} />
-        <Route path="/styled-component" element={<StyledComponentsPage />} />
+        <Route path="/styled-components" element={<StyledComponentsPage />} />
       </Routes>
     </BrowserRouter>
   );

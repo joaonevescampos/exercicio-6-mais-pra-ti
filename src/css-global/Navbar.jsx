@@ -1,27 +1,18 @@
 import { Link } from "react-router-dom";
-import "./global.css";
-import { useEffect, useState } from "react";
+import "../css/navbar.css";
 import { FaCartPlus } from "react-icons/fa";
+import { useTheme } from "../ThemeContext";
 
 const Navbar = () => {
-  const [isDark, setIsDark] = useState(localStorage.getItem("theme") ?? false);
-
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [isDark]);
+  const { theme, toggleTheme } = useTheme();
+  const isDark = theme === "dark";
   return (
-    <nav className={`navbar-container ${isDark ? "dark" : ""}`}>
-      <Link to="/css-global">Mini loja</Link>
+    <nav className={`navbar-container ${isDark ? "dark" : "light"}`}>
+      <Link to="/">Mini loja</Link>
       <div className="nav-right-container">
         <div
-          onClick={() => setIsDark(!isDark)}
-          className={`toggle-container ${isDark ? "dark" : ""}`}
+          onClick={() => toggleTheme(!isDark)}
+          className={`toggle-container ${isDark ? "dark" : "light"}`}
         >
           <div
             className={`toggle-select ${

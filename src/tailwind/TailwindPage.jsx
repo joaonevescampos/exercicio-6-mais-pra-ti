@@ -1,8 +1,8 @@
-import React from 'react'
+import './tailwind.css'
 
 const TailwindPage = () => {
   return (
-    <div>TailwindPage</div>
+    <div className='bg-black'>TailwindPage</div>
   )
 }
 

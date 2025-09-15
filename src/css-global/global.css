@@ -1,34 +1,3 @@
-body {
-  height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-h2,
-h1,
-h3 {
-  margin: 0;
-}
-
-button {
-  box-shadow: none;
-  border: none;
-}
-
-.dark {
-  background-color: rgb(36, 36, 36) !important;
-  color: white;
-}
-
 /* navbar  */
 
 .navbar-container {
@@ -50,7 +19,7 @@ button {
 .toggle-container {
   display: flex;
   align-items: center;
-  padding: 0 5px;
+  padding: 0 3px;
   width: 40px;
   height: 25px;
   border-radius: 20px;
@@ -71,7 +40,7 @@ button {
 }
 
 .translate-left {
-  transform: translateX(25px);
+  transform: translateX(15px);
   transition: all;
   animation-duration: 1s;
   background-color: rgb(30, 165, 165);
@@ -100,7 +69,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
+  width: 240px;
   border: 1px solid rgba(128, 128, 128, 0.555);
   border-radius: 15px;
   padding: 20px;
@@ -146,6 +115,11 @@ main {
   font-size: 10px;
 }
 
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
 /* Button  */
 .solid {
   background-color: rgb(38, 38, 112);
@@ -156,6 +130,10 @@ main {
   height: 40px;
 }
 
+.dark .solid {
+  background-color: rgb(30, 165, 165);
+  color: white;
+}
 /* Product List  */
 
 .product-list {
@@ -182,11 +160,9 @@ main {
   }
 }
 
-
 @media (max-width: 480px) {
   .product-list {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
 }
-
